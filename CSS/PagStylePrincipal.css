@@ -1,0 +1,419 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+::-moz-scrollbar {
+    display:none;
+}
+body {
+    margin: 0;
+    margin-bottom: 2,5rem;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN8rsOUehpOqc.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+header {
+    padding-top: 0.9375rem;
+    padding-bottom: 0.3125rem;
+    text-align: center;
+    font-family: 'Open Sans';
+    background-color: #2067ac;
+}
+.bighead {
+    background: linear-gradient(white, #d8d8d8);
+    background-clip: Text;
+    -webkit-background-clip: Text;
+    -moz-background-clip: Text;
+    color: transparent;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.titles2 {
+    padding: 0.3125rem;
+    text-align: center;
+    border-radius: 1.25rem;
+    background-color:#e6e6e6;
+}
+.titles3 {
+    text-align: left;
+}
+.titles4 {
+    text-align: center;
+}
+.liltitle {
+    padding: 0px 5px 0px 5px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #d2d2d2;
+}
+.Rlink {
+    color: inherit;
+}
+a.Rlink:hover {
+    color: inherit;
+    text-decoration: none;
+}
+nav {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background-color: #4f92d3;
+    padding-top: 0.13rem;
+    padding-bottom: 0.3125rem;
+    color: white;
+}
+.NavLink {
+    text-decoration: none;
+    color: white;
+}
+a.NavLink:hover {
+    text-decoration: none;
+    color: black;
+}
+a.NavLink:active {
+    text-decoration: none;
+    color: black;
+}
+.ActualNav {
+    text-decoration: none;
+    color: #585858;
+    cursor: default;
+} 
+article {
+    padding: 0.3125rem;
+    margin-top: 0.625rem;
+    margin-left:5%;
+    margin-right:5%;
+}
+.articleFinal {
+    padding: 0.3125rem;
+    margin-top: 0.625rem;
+    margin-bottom: 8rem;
+    margin-left:5%;
+    margin-right:5%;
+    z-index: 1;
+}
+.bloqueContent {
+    width: 100%;
+}
+p.parrafo {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+    display: inline-block;
+}
+@media (min-width: 1339px) {
+    p.pleft {
+        max-width: 50rem;
+    }
+    .imgContainer {
+        vertical-align: text-bottom;
+        display: inline-block;
+        width: 30%;
+        min-width: 10rem;
+        margin: auto;
+    }
+    .BigImgFPort {
+        width: 100%;
+        height: 32%;
+        background-image: url(/portfolioFyQ-Bach1/img/heic1502b.jpg);
+    }
+    .BigImgFPort img {
+        width: 1200px;
+        height: 384px;
+        margin: auto;
+        display: block;
+    }
+    .BigImgQPort {
+        width: 100%;
+        height: 32%;
+        background-color:#227fa8;
+    }
+    .BigImgQPort img {
+        width: 1200px;
+        height: 400px;
+        margin: auto;
+        display: block;
+    }
+    .goTop:hover {
+        text-decoration: none;
+        opacity: 1;
+        border-style: solid;
+        border-width: 0.125rem;
+        border-color: black;
+    }
+}
+@media (max-width: 1338px) {
+    p.pleft {
+        max-width: 83.625rem;
+    }
+    .imgContainer {
+        vertical-align: text-bottom;
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+    .BigImgFPort {
+        width: 100%;
+        height: 32%;
+    }
+    .BigImgFPort img {
+        width: 100%;
+        height: 100%;
+    }
+    .BigImgQPort {
+        width: 100%;
+        height: 32%;
+    }
+    .BigImgQPort img {
+        width: 100%;
+        height: 100%;
+    }
+    .goTop:hover {
+        text-decoration: none;
+    }
+}
+img.ContentIcon {
+    display: block;
+    margin: auto;
+    width: all;
+    height: all;
+}
+footer {
+    position:absolute;
+    bottom: 0rem;    
+    padding: 0.3125rem 0;
+    width: 100%;
+    background-color: #9a9a9a;
+    text-align: center;
+    color: white;
+    box-shadow: inset 0px 5px #828282;
+}
+.Flink {
+    color: white;
+    text-decoration: none;
+}
+a.Flink:hover {
+    text-decoration: none;
+    color: black;
+}
+input#abrir-cerrar {
+    visibility:hidden;
+    position: absolute;
+    top: -624.9375rem;
+}
+label[for="abrir-cerrar"] {
+    cursor:pointer;
+    position: absolute;
+    top:0.5rem;
+    left:1rem;
+    z-index: 3;
+    font-size: 2.3rem;
+}
+.MenuIconStyle {
+    color: white;
+    position: absolute;
+    font-size: 2.3rem;
+}
+@-webkit-keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
+}
+.cerrar {
+    display:none;
+}
+#sidebar {
+    width:0;
+}
+#contenido {
+    margin-left:0;
+}
+input#abrir-cerrar:checked ~ #sidebar {
+    width:18.75rem;
+}
+input#abrir-cerrar:checked , input#abrir-cerrar:checked ~ #contenido {
+    margin-left:18.75rem;
+    transition: margin-left .4s;
+}
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] {
+    margin-left:14.50rem;
+    transition: margin-left .4s;
+    position: fixed;
+}
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .MenuIconStyle {
+    padding: 0;
+    color:transparent;
+    background-image: url(/portfolioFyQ-Bach1/img/CloseIcon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1rem;
+}
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .MenuIconStyle {
+    animation-name: spin;
+    animation-duration: 0.4s;
+    animation-fill-mode: forwards;
+}
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .cerrar {
+    display:inline;
+}
+input#abrir-cerrar:checked + label[for="abrir-cerrar"] .abrir {
+    display:none;
+}
+.sideMenuTitle {
+    text-align: center;
+    color: white;
+    background-color: #00324b;
+    padding: 1rem;
+    box-shadow: 0rem -2rem #00324b;
+    display: none;
+}
+.sideMenuTitle:hover {
+    cursor: default;
+}
+.sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background:#004992;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    vertical-align: top;
+}
+.sidebar ul, .sidebar li{
+    margin:0;
+    padding:0;
+    list-style:none inside;
+}
+.sidebar ul {
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width:200px;
+}
+.sidebar a {
+    display: block;
+    font-size: 120%;
+    color: #eee;
+    text-decoration: none;
+    
+}
+.sidebar a:hover{
+    color:#fff;
+    background-color: #00324b9d;
+    text-decoration: none;
+}
+p.ActualMenu {
+    color:#fff;
+    background-color: #00324b;
+    text-decoration: none;
+    padding-left: 0.16rem;
+}
+p.ActualMenu a:hover {
+    cursor: default;
+}
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;   
+}
+.menu{
+    text-align: left;
+}
+.subMenu {
+    padding-left: 0.3rem;
+    border-left: solid 0.16rem #00324b;
+    margin-left: 1rem;
+}
+.ActualSubMenu {
+    color:#fff;
+    position: relative;
+    left: -7px;
+    padding-left: 0.3rem;
+    border-left: solid 0.16rem white;
+    text-decoration: none;
+    background-color: #00324b6e;
+    cursor: default;
+    font-size: 120%;
+}
+.goTop {
+    color:#2067ac;
+    background-color:#add8e680;
+    position: fixed;
+    padding: 0.7rem 1rem;
+    border-radius: 50%;
+    bottom: 40%;
+    right:-1rem;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.goTop:active {
+    text-decoration: none;
+    color:#2067ac;
+    opacity:1;
+    background-color:#add8e6;
+}
+.firm {
+    color: #858585
+}
+.UnderConstruction {
+    width: 100%;
+    height: 65%;
+    margin-bottom: 8rem;
+}
+.UnderConstruction img {
+    width: 100%;
+    height: 100%;
+}
+.ImgCredits {
+    width: 100%;
+    height: 150px;
+}
+.ImgCredits img {
+    width: all;
+    height: all;
+    display: block;
+    margin: auto;
+}
+.imgFoot {
+    text-align: center;
+}
+.ImgCenter {
+    vertical-align: text-bottom;
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+}
+.imgCenter img {
+    display: block;
+    margin: auto;
+    width: all;
+    height: all;
+}
+
+* {
+    user-select: none;
+}

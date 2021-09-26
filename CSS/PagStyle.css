@@ -1,0 +1,375 @@
+html {
+	min-height: 100%;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    display:none;
+}
+
+::-moz-scrollbar {
+    display:none;
+}
+
+body {
+	margin: 0;
+    margin-bottom: 10rem;
+    background:#162430;
+}
+
+header {
+	margin-top: 0;
+	margin-bottom: 0;
+	background:#143959;
+	height: 10%;
+	font-family: 'Share Tech', sans-serif;
+	text-align: center;
+	border-bottom-style: solid;
+	border-bottom-width: 2rem;
+	border-bottom-color:#143959;
+	line-height: 7rem;
+	font-size: 5vw;
+	word-spacing: 1rem;
+	letter-spacing: 0.5rem;
+	color: #fff;
+	cursor: default;
+}
+
+nav {
+	height: 5rem;
+	text-align: center;
+}
+
+a.NavLink {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-family: 'Share Tech', sans-serif;
+}
+
+a.NavLinkActual {
+	color: #0ff;
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-family: 'Share Tech', sans-serif;
+}
+
+#MenuImg {
+	position: relative;
+	display: flex;
+	bottom:3.8rem;
+	background:#143959;
+	margin: auto;
+	width: 7rem;
+	height: 7rem;
+	border-color: #fff;
+	justify-content: center;
+	align-items: center;
+	border-radius: 0 0 50% 50%;
+	cursor: pointer;
+	z-index: 2;
+	animation-name: none;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+#MenuIcon {
+	position: relative;
+	height: 4rem;
+	animation-name: none;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+nav > div > img {
+	height: 5rem;
+}
+
+.MenuItem {
+	position:relative;
+	cursor: pointer;
+	visibility: hidden;
+	animation-name: none;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+#Sub1 {
+	right: 12rem;
+	top: 1rem;
+}
+
+#Sub2 {
+	top: 3.5rem;
+	margin: auto;
+}
+
+#Sub3 {
+	left: 12rem;
+	top: -2rem;
+}
+
+hr {
+	width: 40%;
+	background:#0ff;
+	border-width: 1px;
+	border-color:#0ff;
+}
+
+@font-face {
+    font-family: 'street_soulregular';
+    src: url('../Fonts/grovefont-webfont.woff2') format('woff2'),
+         url('../Fonts/grovefont-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+div.BigTitle {
+	font-family: 'street_soulregular', sans-serif;
+	font-size: 10rem;
+	position: relative;
+	z-index: 9;
+}
+
+.title1 {
+	padding: 0.3125rem;
+	width: 50%;
+    text-align: center;
+    border-radius: 1.25rem;
+    background-color:#0ff;/*143959*/
+    font-size: 2rem;
+    font-family: 'Share Tech', sans-serif;
+    margin: auto;
+}
+
+.title2 {
+	text-align: center;
+	font-family: 'Share Tech', sans-serif;
+	font-size: 2rem;
+	color:#0ff;
+	padding-top: 5rem;
+}
+
+article {
+    padding: 0.3125rem;
+    margin-top: 0.625rem;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+p.parrafoInit {
+	font-size: 1.2rem;
+    font-family: 'Share Tech', sans-serif;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 4rem;
+    text-align: justify;
+    display: inline-block;
+    color: white;
+}
+
+p.parrafoInit0 {
+	font-size: 1.6rem;
+    font-family: 'Share Tech', sans-serif;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    text-align: justify;
+    display: inline-block;
+    color: white;
+    margin-top: 6rem;
+}
+
+p.parrafo {
+    font-size: 1.2rem;
+    font-family: 'Share Tech', sans-serif;
+    margin-top: -0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: justify;
+    display: inline-block;
+    color: white;
+}
+
+@media (min-width: 1620px) {
+	#Cmenu {
+		position:relative;
+		background: white;
+		height: 0;
+		z-index:1;
+		width: 40%;
+		background:#143959;
+		margin: auto;
+		border-radius: 0 0 100% 100%;
+		animation-name: none;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	section {
+		max-width: 1440px;
+		margin: 0px auto;
+	}
+
+	article {
+		text-align: center;
+	}
+
+    p.pwidth {
+        max-width: 50rem;
+    }
+
+    p.pwidth2 {
+    	max-width: 30rem;
+    }
+
+    p.rightAlign {
+    	float: right;
+    }
+
+    p.leftAlign {
+    	float: left;
+    }
+
+    img.floatRight {
+    	float: right;
+    }
+
+    img.float {
+    	float: right;
+    }
+
+	.imgContainer {
+        vertical-align: text-bottom;
+        display: inline-flex;
+        justify-content: center;
+        width: 40%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1338px) and (max-width: 1619px) {
+
+	#Cmenu {
+		position:relative;
+		background: white;
+		height: 0;
+		z-index:1;
+		width: 40%;
+		background:#143959;
+		margin: auto;
+		border-radius: 0 0 100% 100%;
+		animation-name: none;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+	section {
+		max-width: 1440px;
+		margin: 0px auto;
+	}
+
+	article {
+		text-align: center;
+	}
+
+    p.pwidth {
+        max-width: 50rem;
+    }
+
+    p.pwidth2 {
+    	max-width: 30rem;
+    }
+
+    p.rightAlign {
+    	float: right;
+    }
+
+    p.leftAlign {
+    	float: left;
+    }
+
+    img.floatRight {
+    	float: right;
+    }
+
+    img.float {
+    	float: right;
+    }
+
+    .imgContainer {
+        vertical-align: text-bottom;
+        display: inline-flex;
+        justify-content: center;
+        width: 30%;
+        margin: auto;
+    }
+
+}
+@media (max-width: 1338px) {
+	
+	#Cmenu {
+		position:relative;
+		background: white;
+		height: 0;
+		z-index:1;
+		width: 80%;
+		background:#143959;
+		margin: auto;
+		border-radius: 0 0 100% 100%;
+		animation-name: none;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+	}
+
+    p.pwidth {
+        max-width: 83.625rem;
+    }
+
+    p.rightAlign {
+    	float: right;
+    }
+
+    p.leftAlign {
+    	float: left;
+    }
+
+    p.parrafoInit0 {
+		font-size: 1.2rem;
+    	font-family: 'Share Tech', sans-serif;
+    	margin-left: 3rem;
+    	margin-right: 3rem;
+    	text-align: justify;
+    	display: inline-block;
+    	color: white;
+	}
+
+    .imgContainer {
+        vertical-align: text-bottom;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: auto
+    }
+}
+
+img.ContentIcon {
+    display: block;
+    margin: auto;
+    width: all;
+    height: all;
+}
+
+footer {
+	font-size: 2rem;
+	font-family: 'street_soulregular', sans-serif;
+	position:absolute;
+    bottom: 0rem;    
+    padding: 0.3125rem 0;
+    width: 100%;
+    background-color: #143959;
+    text-align: center;
+    color: white;
+    text-align: left;
+    box-shadow: inset 0px 5px #3d5161;
+}
