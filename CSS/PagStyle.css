@@ -14,24 +14,24 @@ html {
 body {
 	margin: 0;
     margin-bottom: 10rem;
-    background:#162430;
+    background:#560c3d;
 }
 
 header {
 	margin-top: 0;
 	margin-bottom: 0;
-	background:#143959;
-	height: 10%;
+	background:#560c3d;
+	height: 10rem;
 	font-family: 'Share Tech', sans-serif;
 	text-align: center;
 	border-bottom-style: solid;
-	border-bottom-width: 2rem;
-	border-bottom-color:#143959;
-	line-height: 7rem;
+	border-bottom-width: 1rem;
+	border-bottom-color:#ff7a0f;
+	line-height: 8rem;
 	font-size: 5vw;
 	word-spacing: 1rem;
 	letter-spacing: 0.5rem;
-	color: #fff;
+	color: #ff962f;
 	cursor: default;
 }
 
@@ -48,7 +48,7 @@ a.NavLink {
 }
 
 a.NavLinkActual {
-	color: #0ff;
+	color: #ff7a0f;
 	text-decoration: none;
 	font-size: 1.3rem;
 	font-family: 'Share Tech', sans-serif;
@@ -58,11 +58,12 @@ a.NavLinkActual {
 	position: relative;
 	display: flex;
 	bottom:3.8rem;
-	background:#143959;
+	background:#560c3d;
 	margin: auto;
 	width: 7rem;
-	height: 7rem;
-	border-color: #fff;
+	height: 6rem;
+	border-color: #ff7a0f;
+	border-bottom-style: solid;
 	justify-content: center;
 	align-items: center;
 	border-radius: 0 0 50% 50%;
@@ -111,9 +112,9 @@ nav > div > img {
 
 hr {
 	width: 40%;
-	background:#0ff;
+	background:#ff7a0f;
 	border-width: 1px;
-	border-color:#0ff;
+	border-color:#ff7a0f;
 }
 
 @font-face {
@@ -135,9 +136,12 @@ div.BigTitle {
 .title1 {
 	padding: 0.3125rem;
 	width: 50%;
+	color: white;
     text-align: center;
     border-radius: 1.25rem;
-    background-color:#0ff;/*143959*/
+    border-color:#ff7a0f;
+    border-style: solid;
+    background-color:#560c3d;/*143959*/
     font-size: 2rem;
     font-family: 'Share Tech', sans-serif;
     margin: auto;
@@ -147,7 +151,7 @@ div.BigTitle {
 	text-align: center;
 	font-family: 'Share Tech', sans-serif;
 	font-size: 2rem;
-	color:#0ff;
+	color:white;
 	padding-top: 5rem;
 }
 
@@ -198,7 +202,7 @@ p.parrafo {
 		height: 0;
 		z-index:1;
 		width: 40%;
-		background:#143959;
+		background:#450a31;
 		margin: auto;
 		border-radius: 0 0 100% 100%;
 		animation-name: none;
@@ -263,7 +267,7 @@ p.parrafo {
 		height: 0;
 		z-index:1;
 		width: 40%;
-		background:#143959;
+		background:#450a31;
 		margin: auto;
 		border-radius: 0 0 100% 100%;
 		animation-name: none;
@@ -328,7 +332,7 @@ p.parrafo {
 		height: 0;
 		z-index:1;
 		width: 80%;
-		background:#143959;
+		background:#450a31;
 		margin: auto;
 		border-radius: 0 0 100% 100%;
 		animation-name: none;
@@ -388,9 +392,9 @@ footer {
     bottom: 0rem;    
     padding: 0.3125rem 0;
     width: 100%;
-    background-color: #143959;
+    background-color: #450a31;
     text-align: center;
     color: white;
     text-align: left;
-    box-shadow: inset 0px 5px #3d5161;
+    box-shadow: inset 0px 5px #ff7a0f;
 }
